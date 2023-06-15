@@ -16,8 +16,8 @@ namespace fukuv0615
         {
             count++;
             MessageBox.Show($"{count}‰ñ–Ú‚Ì’§í");
-
-            guess = $"{textBox1}";
+            
+            int guess = int.Parse(textBox1.Text);
             if (ans == guess)
             {
                 MessageBox.Show("Bingo!!");
