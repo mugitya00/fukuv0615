@@ -21,12 +21,15 @@ namespace fukuv0615
             if (ans == guess)
             {
                 MessageBox.Show("Bingo!!");
+                count = 0;
+
+                ans = rand.Next(0, 101);
             }
-            else if (ans < guess)
+            else if (ans <guess)
             {
                 MessageBox.Show("Less");
             }
-            else if (ans > guess)
+            else 
             {
                 MessageBox.Show("Greater");
             }
